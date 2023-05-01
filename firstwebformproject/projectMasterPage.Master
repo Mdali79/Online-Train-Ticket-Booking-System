@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="projectMasterPage.master.cs" Inherits="firstwebformproject.projectMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="Style_Sheet/StyleSheet1.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 181px;
+            height: 39px;
+        }
+        
+          .singlebtn{
+
+            float:right;
+
+           
+        }
+
+       .btncolour {
+
+             background-color: #008CBA;
+        }
+        .auto-style3 {
+            height: 37px;
+            width: 124px;
+        }
+        .auto-style4 {
+            width: 304px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrapper">
+
+
+            <div class="menu">
+
+
+          
+             
+                <ul>
+                    
+                        <li class="auto-style4"> <h3>Bangladesh Railway</h3></li>
+                    <li  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Welcome.aspx">Home</a> </li>
+                    <li class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Trains.aspx">Trains</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="webform1.aspx">TicketBooking</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Profile.aspx">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </li>
+                    <li class="auto-style3"><asp:Button ID="Button1" runat="server" Text="LOG OUT" OnClick="Button1_Click" Height="38px" Width="124px"  /></li>
+
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="content_body" runat="server">
+                    <p>
+                        <br />
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+            
+               
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+            <div class="clear"></div>
+
+
+            <div class="footer">
+
+
+                <h2>Copyright@mohammodali</h2>
+
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>
